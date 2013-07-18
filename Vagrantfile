@@ -11,6 +11,7 @@ Vagrant::Config.run do |config|
   config.vm.define :server do |server_config|
     server_config.vm.box = BOX
     server_config.vm.network :hostonly, "33.33.33.100"
+    server_config.vm.forward_port 80, 8080
   end
 
   1.upto(CLIENT_COUNT) do |n|
