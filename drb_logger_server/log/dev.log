@@ -1,1 +1,7 @@
 # Logfile created on 2013-07-17 13:40:00 +0200 by logger.rb/31641
+I, [2013-07-18T15:24:53.424217 #5240]  INFO -- : Hello World
+E, [2013-07-18T15:26:10.796993 #5240] ERROR -- : Hello World
+I, [2013-07-18T15:26:16.765477 #5240]  INFO -- : Hello World
+I, [2013-07-18T15:52:32.514175 #4071]  INFO -- : hi
+E, [2013-07-18T15:52:43.810154 #4071] ERROR -- : error in cli_1
+D, [2013-07-18T15:53:00.947195 #4071] DEBUG -- : we're find up here

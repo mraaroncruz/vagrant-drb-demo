@@ -1,6 +1,6 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
-CLIENT_COUNT = 1
+CLIENT_COUNT = ENV["CLIENT_COUNT"] || 3
 BOX = "oneiric64-ruby1.9.3"
 Vagrant::Config.run do |config|
   # All Vagrant configuration is done here. The most common configuration
@@ -17,6 +17,7 @@ Vagrant::Config.run do |config|
     config.vm.define "cli_#{n}" do |client_config|
       client_config.vm.box = BOX
       client_config.vm.network :hostonly, "33.33.33.#{n + 1}"
+      client_config.vm.forward_port 22, (2222 + n)
     end
   end
 
