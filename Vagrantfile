@@ -19,6 +19,7 @@ Vagrant::Config.run do |config|
       client_config.vm.box = BOX
       client_config.vm.network :hostonly, "33.33.33.#{n + 1}"
       client_config.vm.forward_port 22, (2222 + n)
+      client_config.vm.forward_port 3000, 4000 + n
     end
   end
 
