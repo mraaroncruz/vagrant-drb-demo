@@ -5,7 +5,9 @@ I demonstrated how to create an incredibly simple distributed logger using DRuby
 ## How to use
 __Init your boxes__  
 The Vagrant is a vagrant init file which creates a server machine where you will run the server.rb file. You will need to change the constant at the top to point at the box name that you have downloaded. For example if you run
+
     vagrant box add precise64 https://dl.dropbox.com/u/14292474/vagrantboxes/precise64-ruby-1.9.3-p194.box
+
 you would have to change the constant to  `BOX = "precise64"`   
 
 __Run your boxes__  
